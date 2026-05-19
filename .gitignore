@@ -1,0 +1,8 @@
+.DS_Store
+assets/resume_feb_2026.docx
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz

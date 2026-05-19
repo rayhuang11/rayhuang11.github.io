@@ -1,0 +1,138 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --link: #2c5aa0;
+  --link-hover: #1a3d75;
+  --rule: #e5e5e5;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+nav.site-nav {
+  font-size: 0.95rem;
+  margin-bottom: 2.25rem;
+  color: var(--muted);
+}
+
+nav.site-nav a {
+  margin-right: 0.9rem;
+}
+
+nav.site-nav a:last-child { margin-right: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.25rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.subhead {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.headshot {
+  float: right;
+  width: 140px;
+  height: auto;
+  margin: 0.25rem 0 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+main { overflow: hidden; }
+
+main p { margin: 0 0 1rem; }
+
+p.contact {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.paper {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.paper:last-child { border-bottom: none; }
+
+.paper .title {
+  font-weight: 600;
+  margin: 0 0 0.15rem;
+}
+
+.paper .meta {
+  color: var(--muted);
+  font-size: 0.93rem;
+  margin: 0 0 0.5rem;
+}
+
+.paper .hook {
+  font-style: italic;
+  color: var(--muted);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.paper .abstract {
+  font-size: 0.97rem;
+  margin: 0.5rem 0;
+}
+
+.paper .links {
+  font-size: 0.93rem;
+  margin-top: 0.4rem;
+}
+
+.paper .links a { margin-right: 0.8rem; }
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .container { padding: 1.75rem 1rem 3rem; }
+  .headshot {
+    float: none;
+    display: block;
+    width: 130px;
+    margin: 0 0 1rem;
+  }
+  h1 { font-size: 1.5rem; }
+}
